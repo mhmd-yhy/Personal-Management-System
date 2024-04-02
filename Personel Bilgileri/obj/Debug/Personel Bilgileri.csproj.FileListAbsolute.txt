@@ -1,0 +1,85 @@
+C:\Users\YAHYA\source\repos\Personel Bilgileri\Personel Bilgileri\bin\Debug\Database1.mdf
+C:\Users\YAHYA\source\repos\Personel Bilgileri\Personel Bilgileri\bin\Debug\Database1_log.ldf
+C:\Users\YAHYA\source\repos\Personel Bilgileri\Personel Bilgileri\bin\Debug\Personel Bilgileri.exe.config
+C:\Users\YAHYA\source\repos\Personel Bilgileri\Personel Bilgileri\bin\Debug\Personel Bilgileri.exe
+C:\Users\YAHYA\source\repos\Personel Bilgileri\Personel Bilgileri\bin\Debug\Personel Bilgileri.pdb
+C:\Users\YAHYA\source\repos\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.csproj.AssemblyReference.cache
+C:\Users\YAHYA\source\repos\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.Properties.Resources.resources
+C:\Users\YAHYA\source\repos\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.csproj.GenerateResource.cache
+C:\Users\YAHYA\source\repos\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.csproj.CoreCompileInputs.cache
+C:\Users\YAHYA\source\repos\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.exe
+C:\Users\YAHYA\source\repos\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.pdb
+C:\Users\YAHYA\source\repos\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.FormAnaSayfa.resources
+C:\Users\YAHYA\source\repos\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.FormKisiGoruntule.resources
+C:\Users\YAHYA\source\repos\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.FormYeniEkle.resources
+D:\Personel Bilgileri\Personel Bilgileri\bin\Debug\Database1.mdf
+D:\Personel Bilgileri\Personel Bilgileri\bin\Debug\Database1_log.ldf
+D:\Personel Bilgileri\Personel Bilgileri\bin\Debug\Personel Bilgileri.exe.config
+D:\Personel Bilgileri\Personel Bilgileri\bin\Debug\Personel Bilgileri.exe
+D:\Personel Bilgileri\Personel Bilgileri\bin\Debug\Personel Bilgileri.pdb
+D:\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.csproj.AssemblyReference.cache
+D:\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.FormAnaSayfa.resources
+D:\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.FormKisiGoruntule.resources
+D:\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.FormYeniEkle.resources
+D:\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.Properties.Resources.resources
+D:\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.csproj.GenerateResource.cache
+D:\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.csproj.CoreCompileInputs.cache
+D:\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.exe
+D:\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.pdb
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\bin\Debug\Database1.mdf
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\bin\Debug\Database1_log.ldf
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\bin\Debug\Personel Bilgileri.exe.config
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\bin\Debug\Personel Bilgileri.exe
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\bin\Debug\Personel Bilgileri.pdb
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.csproj.AssemblyReference.cache
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.FormKisiGoruntule.resources
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.FormYeniEkle.resources
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.Properties.Resources.resources
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.csproj.GenerateResource.cache
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.csproj.CoreCompileInputs.cache
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.exe
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.pdb
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.Personeller.resources
+D:\Yeni klasör\Personel Bilgileri\Personel Bilgileri\bin\Debug\Database1.mdf
+D:\Yeni klasör\Personel Bilgileri\Personel Bilgileri\bin\Debug\Database1_log.ldf
+D:\Yeni klasör\Personel Bilgileri\Personel Bilgileri\bin\Debug\Personel Bilgileri.exe.config
+D:\Yeni klasör\Personel Bilgileri\Personel Bilgileri\bin\Debug\Personel Bilgileri.exe
+D:\Yeni klasör\Personel Bilgileri\Personel Bilgileri\bin\Debug\Personel Bilgileri.pdb
+D:\Yeni klasör\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.csproj.AssemblyReference.cache
+D:\Yeni klasör\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.FormAnaSayfa.resources
+D:\Yeni klasör\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.FormKisiGoruntule.resources
+D:\Yeni klasör\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.FormYeniEkle.resources
+D:\Yeni klasör\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.Personeller.resources
+D:\Yeni klasör\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.Properties.Resources.resources
+D:\Yeni klasör\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.csproj.GenerateResource.cache
+D:\Yeni klasör\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.csproj.CoreCompileInputs.cache
+D:\Yeni klasör\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.exe
+D:\Yeni klasör\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.pdb
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.FrmMessageBox.resources
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.FrmGiris.resources
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.FrmSifreDegistir.resources
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.FrmDenetim.resources
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.csproj.CopyComplete
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.AnaSayfa.resources
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.Ucretler.resources
+C:\Users\YAHYA\Desktop\Personel Bilgileri\Personel Bilgileri\bin\Debug\Database1.mdf
+C:\Users\YAHYA\Desktop\Personel Bilgileri\Personel Bilgileri\bin\Debug\Database1_log.ldf
+C:\Users\YAHYA\Desktop\Personel Bilgileri\Personel Bilgileri\bin\Debug\Personel Bilgileri.exe.config
+C:\Users\YAHYA\Desktop\Personel Bilgileri\Personel Bilgileri\bin\Debug\Personel Bilgileri.exe
+C:\Users\YAHYA\Desktop\Personel Bilgileri\Personel Bilgileri\bin\Debug\Personel Bilgileri.pdb
+C:\Users\YAHYA\Desktop\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.csproj.AssemblyReference.cache
+C:\Users\YAHYA\Desktop\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.AnaSayfa.resources
+C:\Users\YAHYA\Desktop\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.FormKisiGoruntule.resources
+C:\Users\YAHYA\Desktop\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.FormYeniEkle.resources
+C:\Users\YAHYA\Desktop\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.FrmDenetim.resources
+C:\Users\YAHYA\Desktop\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.FrmMessageBox.resources
+C:\Users\YAHYA\Desktop\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.FrmGiris.resources
+C:\Users\YAHYA\Desktop\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.Personeller.resources
+C:\Users\YAHYA\Desktop\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.Properties.Resources.resources
+C:\Users\YAHYA\Desktop\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.FrmSifreDegistir.resources
+C:\Users\YAHYA\Desktop\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel_Bilgileri.Ucretler.resources
+C:\Users\YAHYA\Desktop\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.csproj.GenerateResource.cache
+C:\Users\YAHYA\Desktop\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.csproj.CoreCompileInputs.cache
+C:\Users\YAHYA\Desktop\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.csproj.CopyComplete
+C:\Users\YAHYA\Desktop\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.exe
+C:\Users\YAHYA\Desktop\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.pdb

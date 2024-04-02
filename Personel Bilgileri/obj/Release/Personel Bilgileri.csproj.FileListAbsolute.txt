@@ -1,0 +1,18 @@
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\bin\Release\Database1.mdf
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\bin\Release\Database1_log.ldf
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\bin\Release\Personel Bilgileri.exe.config
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\bin\Release\Personel Bilgileri.exe
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\bin\Release\Personel Bilgileri.pdb
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Release\Personel_Bilgileri.FormAnaSayfa.resources
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Release\Personel_Bilgileri.FormKisiGoruntule.resources
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Release\Personel_Bilgileri.FormYeniEkle.resources
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Release\Personel_Bilgileri.FrmDenetim.resources
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Release\Personel_Bilgileri.FrmMessageBox.resources
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Release\Personel_Bilgileri.FrmGiris.resources
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Release\Personel_Bilgileri.Personeller.resources
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Release\Personel_Bilgileri.Properties.Resources.resources
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Release\Personel_Bilgileri.FrmSifreDegistir.resources
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Release\Personel Bilgileri.csproj.GenerateResource.cache
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Release\Personel Bilgileri.csproj.CoreCompileInputs.cache
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Release\Personel Bilgileri.exe
+C:\Users\YAHYA\OneDrive\Masaüstü\Personel Bilgileri\Personel Bilgileri\obj\Release\Personel Bilgileri.pdb
