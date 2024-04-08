@@ -141,7 +141,7 @@ namespace Personel_Bilgileri
         void UcretlerGoster()
         {
             string basvur;
-            basvur = "Select SUM(Ucret) from Person Where ID Not IN (Select PersonID From Ucretler Where Ay = '" + CmbAylar.Text + "')";
+            basvur = "Select SUM(Ucret) from Person Where ID Not IN (Select PersonID From Ucretler Where AyID = (Select AyID From Aylar Where Ay = '" + CmbAylar.Text + "'))";
             SqlCommand Cmd = new SqlCommand(basvur, Conn);
             SqlDataReader Reader;
             Conn.Open();
@@ -157,6 +157,7 @@ namespace Personel_Bilgileri
         private void BtnTumOde_Click(object sender, EventArgs e)
         {
             if (CmbAylar.Text == "") return;
+            int AyID = Convert.ToInt32(CmbAylar.SelectedIndex + 1);
             List<int> ides = new List<int>();
             for (int i = 0; i <= dataGridView1.Rows.Count - 1; i++)
                 ides.Add(Convert.ToInt32(dataGridView1.Rows[i].Cells[0].Value));
@@ -166,12 +167,12 @@ namespace Personel_Bilgileri
             SqlDataReader Reader;
             foreach (int id in ides)
             {
-                string basvurKontrol = "Select Ay From Ucretler Where PersonID = " + id + " AND Ay = '" + CmbAylar.Text + "'";
+                string basvurKontrol = "Select AyID From Ucretler Where PersonID = " + id + " AND AyID = '" + AyID + "'";
                 Cmd = new SqlCommand(basvurKontrol, Conn);
                 Conn.Open();
                 Reader = Cmd.ExecuteReader();
                 if (!Reader.Read())
-                    basvur += "insert into Ucretler values((Select Ucret From Person Where ID = " + id + "),'" + CmbAylar.Text + "'," + id + ")";
+                    basvur += "insert into Ucretler values((Select Ucret From Person Where ID = " + id + "),'" + AyID + "'," + id + ")";
                 Conn.Close();
             }
             if(basvur != "")
@@ -195,11 +196,13 @@ namespace Personel_Bilgileri
                 if (e.ColumnIndex == 6)
                 {
                     //MessageBox.Show(e.RowIndex.ToString());
-                    int ID = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value);
                     double Ucret = Convert.ToDouble(dataGridView1.Rows[e.RowIndex].Cells[5].Value);
-                    string basvur2 = "Insert Into Ucretler values(" + Ucret + ", '" + CmbAylar.Text + "', " + ID + ")";
+                    int AyID = Convert.ToInt32(CmbAylar.SelectedIndex + 1);
+                    int ID = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value);
+
+                    string basvur2 = "Insert Into Ucretler values(" + Ucret + ", '" + AyID + "', " + ID + ")";
                     SqlCommand Cmd;
-                    string basvur = "Select UcretID From Ucretler Where Ay = '" + CmbAylar.Text + "' AND PersonID = " + ID;
+                    string basvur = "Select UcretID From Ucretler Where AyID = '" + AyID + "' AND PersonID = " + ID;
                     Cmd = new SqlCommand(basvur, Conn);
                     SqlDataReader Reader;
                     Conn.Open();

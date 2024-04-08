@@ -30,15 +30,15 @@ namespace Personel_Bilgileri
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.TxtSifre = new System.Windows.Forms.TextBox();
             this.TxtKullanici = new System.Windows.Forms.TextBox();
-            this.TxtDogumYeri = new System.Windows.Forms.TextBox();
             this.BtnAdminEkle = new System.Windows.Forms.Button();
-            this.BtnAnaSayfa = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.BtnAdminSil = new System.Windows.Forms.Button();
+            this.TxtDogumYeri = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.CmbAdmin = new System.Windows.Forms.ComboBox();
+            this.BtnAdminSil = new System.Windows.Forms.Button();
+            this.BtnAnaSayfa = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.CmbPersoneller = new System.Windows.Forms.ComboBox();
             this.LblYeniUcret = new System.Windows.Forms.Label();
@@ -50,8 +50,8 @@ namespace Personel_Bilgileri
             this.label3 = new System.Windows.Forms.Label();
             this.Oran = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Oran)).BeginInit();
             this.SuspendLayout();
@@ -59,36 +59,37 @@ namespace Personel_Bilgileri
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(31)))), ((int)(((byte)(45)))));
+            this.panel1.Controls.Add(this.groupBox4);
             this.panel1.Controls.Add(this.groupBox3);
             this.panel1.Controls.Add(this.BtnAnaSayfa);
-            this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(10, 10);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(611, 387);
+            this.panel1.Size = new System.Drawing.Size(659, 391);
             this.panel1.TabIndex = 0;
             // 
-            // groupBox3
+            // groupBox4
             // 
-            this.groupBox3.Controls.Add(this.TxtSifre);
-            this.groupBox3.Controls.Add(this.TxtKullanici);
-            this.groupBox3.Controls.Add(this.TxtDogumYeri);
-            this.groupBox3.Controls.Add(this.BtnAdminEkle);
-            this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
-            this.groupBox3.Location = new System.Drawing.Point(0, 212);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(618, 72);
-            this.groupBox3.TabIndex = 25;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Admin Ekle";
+            this.groupBox4.Controls.Add(this.TxtSifre);
+            this.groupBox4.Controls.Add(this.TxtKullanici);
+            this.groupBox4.Controls.Add(this.BtnAdminEkle);
+            this.groupBox4.Controls.Add(this.TxtDogumYeri);
+            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
+            this.groupBox4.Location = new System.Drawing.Point(0, 211);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(659, 104);
+            this.groupBox4.TabIndex = 26;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Admin Ekle";
             // 
             // TxtSifre
             // 
             this.TxtSifre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(46)))), ((int)(((byte)(61)))));
             this.TxtSifre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtSifre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
-            this.TxtSifre.Location = new System.Drawing.Point(338, 29);
+            this.TxtSifre.Location = new System.Drawing.Point(337, 50);
             this.TxtSifre.MaxLength = 4;
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(148, 30);
@@ -102,7 +103,7 @@ namespace Personel_Bilgileri
             this.TxtKullanici.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(46)))), ((int)(((byte)(61)))));
             this.TxtKullanici.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtKullanici.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
-            this.TxtKullanici.Location = new System.Drawing.Point(10, 29);
+            this.TxtKullanici.Location = new System.Drawing.Point(9, 50);
             this.TxtKullanici.MaxLength = 10;
             this.TxtKullanici.Name = "TxtKullanici";
             this.TxtKullanici.Size = new System.Drawing.Size(145, 30);
@@ -110,20 +111,6 @@ namespace Personel_Bilgileri
             this.TxtKullanici.Text = "Kullanıcı Adı";
             this.TxtKullanici.TextChanged += new System.EventHandler(this.TxtKullanici_TextChanged);
             this.TxtKullanici.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TxtKullanici_MouseDown);
-            // 
-            // TxtDogumYeri
-            // 
-            this.TxtDogumYeri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(46)))), ((int)(((byte)(61)))));
-            this.TxtDogumYeri.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtDogumYeri.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
-            this.TxtDogumYeri.Location = new System.Drawing.Point(171, 29);
-            this.TxtDogumYeri.MaxLength = 50;
-            this.TxtDogumYeri.Name = "TxtDogumYeri";
-            this.TxtDogumYeri.Size = new System.Drawing.Size(148, 30);
-            this.TxtDogumYeri.TabIndex = 26;
-            this.TxtDogumYeri.Text = "Doğum Yeri";
-            this.TxtDogumYeri.TextChanged += new System.EventHandler(this.TxtDogumYeri_TextChanged);
-            this.TxtDogumYeri.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TxtDogumYeri_MouseDown);
             // 
             // BtnAdminEkle
             // 
@@ -135,7 +122,7 @@ namespace Personel_Bilgileri
             this.BtnAdminEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAdminEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.BtnAdminEkle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
-            this.BtnAdminEkle.Location = new System.Drawing.Point(510, 29);
+            this.BtnAdminEkle.Location = new System.Drawing.Point(509, 50);
             this.BtnAdminEkle.Name = "BtnAdminEkle";
             this.BtnAdminEkle.Size = new System.Drawing.Size(99, 30);
             this.BtnAdminEkle.TabIndex = 24;
@@ -143,53 +130,32 @@ namespace Personel_Bilgileri
             this.BtnAdminEkle.UseVisualStyleBackColor = false;
             this.BtnAdminEkle.Click += new System.EventHandler(this.BtnAdminEkle_Click);
             // 
-            // BtnAnaSayfa
+            // TxtDogumYeri
             // 
-            this.BtnAnaSayfa.AutoSize = true;
-            this.BtnAnaSayfa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(59)))), ((int)(((byte)(71)))));
-            this.BtnAnaSayfa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnAnaSayfa.FlatAppearance.BorderSize = 0;
-            this.BtnAnaSayfa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAnaSayfa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.BtnAnaSayfa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
-            this.BtnAnaSayfa.Location = new System.Drawing.Point(510, 349);
-            this.BtnAnaSayfa.Name = "BtnAnaSayfa";
-            this.BtnAnaSayfa.Size = new System.Drawing.Size(99, 32);
-            this.BtnAnaSayfa.TabIndex = 19;
-            this.BtnAnaSayfa.Text = "AnaSayfa";
-            this.BtnAnaSayfa.UseVisualStyleBackColor = false;
-            this.BtnAnaSayfa.Click += new System.EventHandler(this.BtnAnaSayfa_Click);
+            this.TxtDogumYeri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(46)))), ((int)(((byte)(61)))));
+            this.TxtDogumYeri.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtDogumYeri.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
+            this.TxtDogumYeri.Location = new System.Drawing.Point(170, 50);
+            this.TxtDogumYeri.MaxLength = 50;
+            this.TxtDogumYeri.Name = "TxtDogumYeri";
+            this.TxtDogumYeri.Size = new System.Drawing.Size(148, 30);
+            this.TxtDogumYeri.TabIndex = 26;
+            this.TxtDogumYeri.Text = "Doğum Yeri";
+            this.TxtDogumYeri.TextChanged += new System.EventHandler(this.TxtDogumYeri_TextChanged);
+            this.TxtDogumYeri.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TxtDogumYeri_MouseDown);
             // 
-            // groupBox2
+            // groupBox3
             // 
-            this.groupBox2.Controls.Add(this.BtnAdminSil);
-            this.groupBox2.Controls.Add(this.CmbAdmin);
-            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
-            this.groupBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.groupBox2.Location = new System.Drawing.Point(0, 134);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(618, 72);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Admin Sil";
-            // 
-            // BtnAdminSil
-            // 
-            this.BtnAdminSil.AutoSize = true;
-            this.BtnAdminSil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(59)))), ((int)(((byte)(71)))));
-            this.BtnAdminSil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnAdminSil.FlatAppearance.BorderSize = 0;
-            this.BtnAdminSil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAdminSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.BtnAdminSil.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
-            this.BtnAdminSil.Location = new System.Drawing.Point(184, 28);
-            this.BtnAdminSil.Name = "BtnAdminSil";
-            this.BtnAdminSil.Size = new System.Drawing.Size(99, 30);
-            this.BtnAdminSil.TabIndex = 24;
-            this.BtnAdminSil.Text = "Uygula";
-            this.BtnAdminSil.UseVisualStyleBackColor = false;
-            this.BtnAdminSil.Click += new System.EventHandler(this.BtnAdminSil_Click);
+            this.groupBox3.Controls.Add(this.CmbAdmin);
+            this.groupBox3.Controls.Add(this.BtnAdminSil);
+            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
+            this.groupBox3.Location = new System.Drawing.Point(0, 128);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(659, 83);
+            this.groupBox3.TabIndex = 25;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Admin Sil";
             // 
             // CmbAdmin
             // 
@@ -203,10 +169,44 @@ namespace Personel_Bilgileri
             this.CmbAdmin.IntegralHeight = false;
             this.CmbAdmin.Items.AddRange(new object[] {
             "AAAAA"});
-            this.CmbAdmin.Location = new System.Drawing.Point(10, 28);
+            this.CmbAdmin.Location = new System.Drawing.Point(9, 29);
             this.CmbAdmin.Name = "CmbAdmin";
             this.CmbAdmin.Size = new System.Drawing.Size(145, 31);
             this.CmbAdmin.TabIndex = 21;
+            // 
+            // BtnAdminSil
+            // 
+            this.BtnAdminSil.AutoSize = true;
+            this.BtnAdminSil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(59)))), ((int)(((byte)(71)))));
+            this.BtnAdminSil.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnAdminSil.FlatAppearance.BorderSize = 0;
+            this.BtnAdminSil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAdminSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.BtnAdminSil.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
+            this.BtnAdminSil.Location = new System.Drawing.Point(183, 29);
+            this.BtnAdminSil.Name = "BtnAdminSil";
+            this.BtnAdminSil.Size = new System.Drawing.Size(99, 30);
+            this.BtnAdminSil.TabIndex = 24;
+            this.BtnAdminSil.Text = "Uygula";
+            this.BtnAdminSil.UseVisualStyleBackColor = false;
+            this.BtnAdminSil.Click += new System.EventHandler(this.BtnAdminSil_Click);
+            // 
+            // BtnAnaSayfa
+            // 
+            this.BtnAnaSayfa.AutoSize = true;
+            this.BtnAnaSayfa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(59)))), ((int)(((byte)(71)))));
+            this.BtnAnaSayfa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnAnaSayfa.FlatAppearance.BorderSize = 0;
+            this.BtnAnaSayfa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAnaSayfa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.BtnAnaSayfa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
+            this.BtnAnaSayfa.Location = new System.Drawing.Point(509, 339);
+            this.BtnAnaSayfa.Name = "BtnAnaSayfa";
+            this.BtnAnaSayfa.Size = new System.Drawing.Size(99, 32);
+            this.BtnAnaSayfa.TabIndex = 19;
+            this.BtnAnaSayfa.Text = "AnaSayfa";
+            this.BtnAnaSayfa.UseVisualStyleBackColor = false;
+            this.BtnAnaSayfa.Click += new System.EventHandler(this.BtnAnaSayfa_Click);
             // 
             // groupBox1
             // 
@@ -223,7 +223,7 @@ namespace Personel_Bilgileri
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(611, 128);
+            this.groupBox1.Size = new System.Drawing.Size(659, 128);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ucret Yönetim";
@@ -340,7 +340,7 @@ namespace Personel_Bilgileri
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(46)))), ((int)(((byte)(61)))));
-            this.ClientSize = new System.Drawing.Size(631, 407);
+            this.ClientSize = new System.Drawing.Size(679, 411);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -352,10 +352,10 @@ namespace Personel_Bilgileri
             this.Load += new System.EventHandler(this.FrmDenetim_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Oran)).EndInit();
@@ -384,6 +384,6 @@ namespace Personel_Bilgileri
         private System.Windows.Forms.TextBox TxtDogumYeri;
         private System.Windows.Forms.TextBox TxtSifre;
         private System.Windows.Forms.TextBox TxtKullanici;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox4;
     }
 }
