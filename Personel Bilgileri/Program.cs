@@ -16,7 +16,7 @@ namespace Personel_Bilgileri
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmGiris());
+            Application.Run(new AnaSayfa());
         }
     }
 }

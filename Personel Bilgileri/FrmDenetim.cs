@@ -27,17 +27,26 @@ namespace Personel_Bilgileri
         private DataSet ds;
         void Data()
         {
-            string basvur = "Select Isim + ' ' +Soyad As IsimSoayd From Person ORDER BY Isim ASC; Select KullaniciAdi From Giris";
+            string basvur = "Select ID, Isim + ' ' +Soyad As IsimSoyad From Person ORDER BY Isim ASC; Select KullaniciAdi From Giris; Select ID, Isim + ' ' +Soyad As IsimSoyad From Person ORDER BY Isim ASC; Select Ay From Aylar";
             SqlDataAdapter da = new SqlDataAdapter(basvur, Conn);
             ds = new DataSet();
             da.Fill(ds);
+
             CmbPersoneller.DataSource = ds.Tables[0];
-            CmbPersoneller.DisplayMember = "IsimSoayd";
-            ds.Tables[0].Rows.Add("Tüm");
+            CmbPersoneller.DisplayMember = "IsimSoyad";
+            ds.Tables[0].Rows.Add(0, "Tüm");
             CmbPersoneller.SelectedIndex = CmbPersoneller.Items.Count - 1;
 
             CmbAdmin.DataSource = ds.Tables[1];
             CmbAdmin.DisplayMember = "KullaniciAdi";
+
+            CmbPersonellerAvansi.DataSource = ds.Tables[2];
+            CmbPersonellerAvansi.DisplayMember = "IsimSoyad";
+
+            CmbAylar.DataSource = ds.Tables[3];
+            CmbAylar.DisplayMember = "Ay";
+
+            
         }
         private void BtnAnaSayfa_Click(object sender, EventArgs e)
         {
@@ -78,9 +87,20 @@ namespace Personel_Bilgileri
                         if (CmbPersoneller.Text == "Tüm") basvur = "Update Person Set Ucret = Ucret * (" + oran + ")";
                         else
                         {
+                            DataTable dt = ds.Tables[0];
+
+                            int ID = -1;
+                            foreach (DataRow Dr in dt.Rows)
+                            {
+                                if (Dr[1] == CmbPersoneller.Text)
+                                {
+                                    ID = Convert.ToInt32(Dr[0]);
+                                }
+                            }
+
                             string Isim = CmbPersoneller.Text.Substring(0, Isimindex);
                             string Soyad = CmbPersoneller.Text.Substring(Isimindex + 1);
-                            basvur = "Update Person Set Ucret = Ucret * (" + oran + ") Where Isim = '" + Isim + "'";
+                            basvur = "Update Person Set Ucret = Ucret * (" + oran + ") Where ID = " + ID + "";
                         }
 
                         SqlCommand Cmd = new SqlCommand(basvur, Conn);
@@ -250,6 +270,68 @@ namespace Personel_Bilgileri
             if (TxtSifre.Text.Length == 4) BtnAdminEkle.Enabled = true;
             else BtnAdminEkle.Enabled = false;
         }
-        
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OranAvansi_ValueChanged(object sender, EventArgs e)
+        {
+            LblAvans();
+        }
+        void LblAvans()
+        {
+            string oran;
+            oran = (OranAvansi.Value).ToString();
+            if (OranAvansi.Value == 0) LblBelirlenmisAvans.Text = 0.ToString();
+            else LblBelirlenmisAvans.Text = ((float.Parse(LblMiktar.Text) * (float.Parse(oran))) / 100).ToString().Replace(",", ".");
+        }
+
+        private void CmbPersonellerAvansi_SelectedValueChanged(object sender, EventArgs e)
+        {
+            int index = CmbPersonellerAvansi.Text.IndexOf(" ");
+            string Isim = CmbPersonellerAvansi.Text.Substring(0, index + 1);
+            string basvur = "Select Ucret From Person Where Isim = '"+ Isim + "'";
+            SqlCommand Cmd = new SqlCommand(basvur, Conn);
+            SqlDataReader Reader;
+            Conn.Open();
+            Reader = Cmd.ExecuteReader();
+            if (Reader.Read())
+            {
+                LblMaas.Text = Reader.GetValue(0).ToString();
+                LblMiktar.Text = (Convert.ToInt32(LblMaas.Text) / 2).ToString();
+            }
+            Conn.Close();
+        }
+
+        private void BtnAvans_Click(object sender, EventArgs e)
+        {
+            if (OranAvansi.Value == 0)
+            {
+                FrmMessageBox.Show("Oranı giriniz.", "Denetim", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            DataTable dt = ds.Tables[2];
+
+            int ID = -1;
+            foreach(DataRow Dr in dt.Rows)
+            {
+                if (Dr[1] == CmbPersonellerAvansi.Text)
+                {
+                    ID = Convert.ToInt32(Dr[0]);
+                }
+            }
+
+            string basvur = "Insert Into Avanslar Values(" + LblBelirlenmisAvans.Text + "," + (CmbAylar.SelectedIndex + 1) + "," + ID + ")";
+
+            SqlCommand Cmd = new SqlCommand(basvur, Conn);
+            Conn.Open();
+            Cmd.ExecuteNonQuery();
+            Conn.Close();
+
+            FrmMessageBox.Show("Avans Kesildi", "Denetim", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

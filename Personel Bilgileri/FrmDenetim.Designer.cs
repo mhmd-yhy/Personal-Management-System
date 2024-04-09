@@ -38,6 +38,19 @@ namespace Personel_Bilgileri
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.CmbAdmin = new System.Windows.Forms.ComboBox();
             this.BtnAdminSil = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.LblBelirlenmisAvans = new System.Windows.Forms.Label();
+            this.LblMiktar = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.OranAvansi = new System.Windows.Forms.NumericUpDown();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.BtnAvans = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.CmbAylar = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.CmbPersonellerAvansi = new System.Windows.Forms.ComboBox();
+            this.LblMaas = new System.Windows.Forms.Label();
             this.BtnAnaSayfa = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.CmbPersoneller = new System.Windows.Forms.ComboBox();
@@ -52,6 +65,8 @@ namespace Personel_Bilgileri
             this.panel1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.OranAvansi)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Oran)).BeginInit();
             this.SuspendLayout();
@@ -61,12 +76,13 @@ namespace Personel_Bilgileri
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(31)))), ((int)(((byte)(45)))));
             this.panel1.Controls.Add(this.groupBox4);
             this.panel1.Controls.Add(this.groupBox3);
+            this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.BtnAnaSayfa);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(10, 10);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(659, 391);
+            this.panel1.Size = new System.Drawing.Size(625, 599);
             this.panel1.TabIndex = 0;
             // 
             // groupBox4
@@ -77,10 +93,10 @@ namespace Personel_Bilgileri
             this.groupBox4.Controls.Add(this.TxtDogumYeri);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
-            this.groupBox4.Location = new System.Drawing.Point(0, 211);
+            this.groupBox4.Location = new System.Drawing.Point(0, 427);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(659, 104);
-            this.groupBox4.TabIndex = 26;
+            this.groupBox4.Size = new System.Drawing.Size(625, 104);
+            this.groupBox4.TabIndex = 29;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Admin Ekle";
             // 
@@ -95,8 +111,6 @@ namespace Personel_Bilgileri
             this.TxtSifre.Size = new System.Drawing.Size(148, 30);
             this.TxtSifre.TabIndex = 27;
             this.TxtSifre.Text = "Şifre";
-            this.TxtSifre.TextChanged += new System.EventHandler(this.TxtSifre_TextChanged);
-            this.TxtSifre.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TxtSifre_MouseDown);
             // 
             // TxtKullanici
             // 
@@ -109,8 +123,6 @@ namespace Personel_Bilgileri
             this.TxtKullanici.Size = new System.Drawing.Size(145, 30);
             this.TxtKullanici.TabIndex = 25;
             this.TxtKullanici.Text = "Kullanıcı Adı";
-            this.TxtKullanici.TextChanged += new System.EventHandler(this.TxtKullanici_TextChanged);
-            this.TxtKullanici.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TxtKullanici_MouseDown);
             // 
             // BtnAdminEkle
             // 
@@ -128,7 +140,6 @@ namespace Personel_Bilgileri
             this.BtnAdminEkle.TabIndex = 24;
             this.BtnAdminEkle.Text = "Uygula";
             this.BtnAdminEkle.UseVisualStyleBackColor = false;
-            this.BtnAdminEkle.Click += new System.EventHandler(this.BtnAdminEkle_Click);
             // 
             // TxtDogumYeri
             // 
@@ -141,8 +152,6 @@ namespace Personel_Bilgileri
             this.TxtDogumYeri.Size = new System.Drawing.Size(148, 30);
             this.TxtDogumYeri.TabIndex = 26;
             this.TxtDogumYeri.Text = "Doğum Yeri";
-            this.TxtDogumYeri.TextChanged += new System.EventHandler(this.TxtDogumYeri_TextChanged);
-            this.TxtDogumYeri.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TxtDogumYeri_MouseDown);
             // 
             // groupBox3
             // 
@@ -150,10 +159,10 @@ namespace Personel_Bilgileri
             this.groupBox3.Controls.Add(this.BtnAdminSil);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
-            this.groupBox3.Location = new System.Drawing.Point(0, 128);
+            this.groupBox3.Location = new System.Drawing.Point(0, 344);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(659, 83);
-            this.groupBox3.TabIndex = 25;
+            this.groupBox3.Size = new System.Drawing.Size(625, 83);
+            this.groupBox3.TabIndex = 28;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Admin Sil";
             // 
@@ -189,7 +198,166 @@ namespace Personel_Bilgileri
             this.BtnAdminSil.TabIndex = 24;
             this.BtnAdminSil.Text = "Uygula";
             this.BtnAdminSil.UseVisualStyleBackColor = false;
-            this.BtnAdminSil.Click += new System.EventHandler(this.BtnAdminSil_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.LblBelirlenmisAvans);
+            this.groupBox2.Controls.Add(this.LblMiktar);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.OranAvansi);
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.BtnAvans);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.CmbAylar);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.CmbPersonellerAvansi);
+            this.groupBox2.Controls.Add(this.LblMaas);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
+            this.groupBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.groupBox2.Location = new System.Drawing.Point(0, 128);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(625, 216);
+            this.groupBox2.TabIndex = 27;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Maaş Avansı";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // LblBelirlenmisAvans
+            // 
+            this.LblBelirlenmisAvans.AutoSize = true;
+            this.LblBelirlenmisAvans.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
+            this.LblBelirlenmisAvans.Location = new System.Drawing.Point(318, 131);
+            this.LblBelirlenmisAvans.Name = "LblBelirlenmisAvans";
+            this.LblBelirlenmisAvans.Size = new System.Drawing.Size(0, 23);
+            this.LblBelirlenmisAvans.TabIndex = 834;
+            // 
+            // LblMiktar
+            // 
+            this.LblMiktar.AutoSize = true;
+            this.LblMiktar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
+            this.LblMiktar.Location = new System.Drawing.Point(510, 85);
+            this.LblMiktar.Name = "LblMiktar";
+            this.LblMiktar.Size = new System.Drawing.Size(0, 23);
+            this.LblMiktar.TabIndex = 832;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
+            this.label8.Location = new System.Drawing.Point(85, 177);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(28, 23);
+            this.label8.TabIndex = 831;
+            this.label8.Text = "%";
+            // 
+            // OranAvansi
+            // 
+            this.OranAvansi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(46)))), ((int)(((byte)(61)))));
+            this.OranAvansi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.OranAvansi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
+            this.OranAvansi.Location = new System.Drawing.Point(10, 173);
+            this.OranAvansi.Name = "OranAvansi";
+            this.OranAvansi.Size = new System.Drawing.Size(59, 26);
+            this.OranAvansi.TabIndex = 830;
+            this.OranAvansi.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.OranAvansi.ValueChanged += new System.EventHandler(this.OranAvansi_ValueChanged);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
+            this.label11.Location = new System.Drawing.Point(183, 131);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(168, 23);
+            this.label11.TabIndex = 829;
+            this.label11.Text = "Belirlenmiş Avans:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
+            this.label9.Location = new System.Drawing.Point(10, 37);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(430, 23);
+            this.label9.TabIndex = 827;
+            this.label9.Text = "Not: bir maaş`tan kullanabilmek miktarı 50%`dir.";
+            // 
+            // BtnAvans
+            // 
+            this.BtnAvans.AutoSize = true;
+            this.BtnAvans.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(59)))), ((int)(((byte)(71)))));
+            this.BtnAvans.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnAvans.FlatAppearance.BorderSize = 0;
+            this.BtnAvans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAvans.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.BtnAvans.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
+            this.BtnAvans.Location = new System.Drawing.Point(187, 170);
+            this.BtnAvans.Name = "BtnAvans";
+            this.BtnAvans.Size = new System.Drawing.Size(99, 30);
+            this.BtnAvans.TabIndex = 20;
+            this.BtnAvans.Text = "Uygula";
+            this.BtnAvans.UseVisualStyleBackColor = false;
+            this.BtnAvans.Click += new System.EventHandler(this.BtnAvans_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
+            this.label7.Location = new System.Drawing.Point(183, 85);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(65, 23);
+            this.label7.TabIndex = 822;
+            this.label7.Text = "Maaş:";
+            // 
+            // CmbAylar
+            // 
+            this.CmbAylar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(46)))), ((int)(((byte)(61)))));
+            this.CmbAylar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmbAylar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CmbAylar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
+            this.CmbAylar.FormattingEnabled = true;
+            this.CmbAylar.Location = new System.Drawing.Point(9, 126);
+            this.CmbAylar.Name = "CmbAylar";
+            this.CmbAylar.Size = new System.Drawing.Size(145, 31);
+            this.CmbAylar.TabIndex = 826;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
+            this.label6.Location = new System.Drawing.Point(345, 84);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(211, 23);
+            this.label6.TabIndex = 823;
+            this.label6.Text = "Kullanılabilmek miktarı:";
+            // 
+            // CmbPersonellerAvansi
+            // 
+            this.CmbPersonellerAvansi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(46)))), ((int)(((byte)(61)))));
+            this.CmbPersonellerAvansi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmbPersonellerAvansi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CmbPersonellerAvansi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
+            this.CmbPersonellerAvansi.FormattingEnabled = true;
+            this.CmbPersonellerAvansi.Location = new System.Drawing.Point(9, 84);
+            this.CmbPersonellerAvansi.Name = "CmbPersonellerAvansi";
+            this.CmbPersonellerAvansi.Size = new System.Drawing.Size(145, 31);
+            this.CmbPersonellerAvansi.TabIndex = 25;
+            this.CmbPersonellerAvansi.SelectedValueChanged += new System.EventHandler(this.CmbPersonellerAvansi_SelectedValueChanged);
+            // 
+            // LblMaas
+            // 
+            this.LblMaas.AutoSize = true;
+            this.LblMaas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
+            this.LblMaas.Location = new System.Drawing.Point(240, 85);
+            this.LblMaas.Name = "LblMaas";
+            this.LblMaas.Size = new System.Drawing.Size(0, 23);
+            this.LblMaas.TabIndex = 824;
             // 
             // BtnAnaSayfa
             // 
@@ -200,7 +368,7 @@ namespace Personel_Bilgileri
             this.BtnAnaSayfa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAnaSayfa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.BtnAnaSayfa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
-            this.BtnAnaSayfa.Location = new System.Drawing.Point(509, 339);
+            this.BtnAnaSayfa.Location = new System.Drawing.Point(509, 547);
             this.BtnAnaSayfa.Name = "BtnAnaSayfa";
             this.BtnAnaSayfa.Size = new System.Drawing.Size(99, 32);
             this.BtnAnaSayfa.TabIndex = 19;
@@ -223,7 +391,7 @@ namespace Personel_Bilgileri
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(659, 128);
+            this.groupBox1.Size = new System.Drawing.Size(625, 128);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ucret Yönetim";
@@ -327,7 +495,7 @@ namespace Personel_Bilgileri
             this.Oran.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(46)))), ((int)(((byte)(61)))));
             this.Oran.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Oran.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(200)))));
-            this.Oran.Location = new System.Drawing.Point(10, 82);
+            this.Oran.Location = new System.Drawing.Point(10, 78);
             this.Oran.Name = "Oran";
             this.Oran.Size = new System.Drawing.Size(59, 26);
             this.Oran.TabIndex = 10;
@@ -340,7 +508,7 @@ namespace Personel_Bilgileri
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(46)))), ((int)(((byte)(61)))));
-            this.ClientSize = new System.Drawing.Size(679, 411);
+            this.ClientSize = new System.Drawing.Size(645, 619);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -356,6 +524,9 @@ namespace Personel_Bilgileri
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.OranAvansi)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Oran)).EndInit();
@@ -371,19 +542,32 @@ namespace Personel_Bilgileri
         private System.Windows.Forms.Button BtnArttir;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.NumericUpDown Oran;
-        private System.Windows.Forms.Button BtnAdminSil;
-        private System.Windows.Forms.ComboBox CmbAdmin;
         private System.Windows.Forms.CheckBox UcretModu;
         private System.Windows.Forms.Label LblYeniUcret;
         private System.Windows.Forms.Label LblUcret;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox CmbPersoneller;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button BtnAdminEkle;
-        private System.Windows.Forms.TextBox TxtDogumYeri;
+        private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.TextBox TxtSifre;
         private System.Windows.Forms.TextBox TxtKullanici;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button BtnAdminEkle;
+        private System.Windows.Forms.TextBox TxtDogumYeri;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.ComboBox CmbAdmin;
+        private System.Windows.Forms.Button BtnAdminSil;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button BtnAvans;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox CmbAylar;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox CmbPersonellerAvansi;
+        private System.Windows.Forms.Label LblMaas;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.NumericUpDown OranAvansi;
+        private System.Windows.Forms.Label LblBelirlenmisAvans;
+        private System.Windows.Forms.Label LblMiktar;
     }
 }

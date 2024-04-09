@@ -83,8 +83,6 @@ C:\Users\YAHYA\Desktop\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel 
 C:\Users\YAHYA\Desktop\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.csproj.CopyComplete
 C:\Users\YAHYA\Desktop\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.exe
 C:\Users\YAHYA\Desktop\Personel Bilgileri\Personel Bilgileri\obj\Debug\Personel Bilgileri.pdb
-C:\Users\YAHYA\Desktop\Personel Bilgileri\Personal-Management-System\Personel Bilgileri\bin\Debug\Database1.mdf
-C:\Users\YAHYA\Desktop\Personel Bilgileri\Personal-Management-System\Personel Bilgileri\bin\Debug\Database1_log.ldf
 C:\Users\YAHYA\Desktop\Personel Bilgileri\Personal-Management-System\Personel Bilgileri\bin\Debug\Personel Bilgileri.exe.config
 C:\Users\YAHYA\Desktop\Personel Bilgileri\Personal-Management-System\Personel Bilgileri\bin\Debug\Personel Bilgileri.exe
 C:\Users\YAHYA\Desktop\Personel Bilgileri\Personal-Management-System\Personel Bilgileri\bin\Debug\Personel Bilgileri.pdb
@@ -104,3 +102,5 @@ C:\Users\YAHYA\Desktop\Personel Bilgileri\Personal-Management-System\Personel Bi
 C:\Users\YAHYA\Desktop\Personel Bilgileri\Personal-Management-System\Personel Bilgileri\obj\Debug\Personel Bilgileri.csproj.CopyComplete
 C:\Users\YAHYA\Desktop\Personel Bilgileri\Personal-Management-System\Personel Bilgileri\obj\Debug\Personel Bilgileri.exe
 C:\Users\YAHYA\Desktop\Personel Bilgileri\Personal-Management-System\Personel Bilgileri\obj\Debug\Personel Bilgileri.pdb
+C:\Users\YAHYA\Desktop\Personel Bilgileri\Personal-Management-System\Personel Bilgileri\bin\Debug\Database1.mdf
+C:\Users\YAHYA\Desktop\Personel Bilgileri\Personal-Management-System\Personel Bilgileri\bin\Debug\Database1_log.ldf
