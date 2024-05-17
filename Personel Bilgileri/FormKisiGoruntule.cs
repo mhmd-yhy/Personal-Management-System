@@ -340,7 +340,7 @@ namespace Personel_Bilgileri
                     Cmd.Parameters.AddWithValue("@Isim", TxtIsim.Text);
                     Cmd.Parameters.AddWithValue("@Soyad", TxtSoyad.Text);
                     Cmd.Parameters.AddWithValue("@DogumYeri", TxtDoğumYeri.Text);
-                    Cmd.Parameters.AddWithValue("@DogumTarihi", DtpDogumTarihi.Text);
+                    Cmd.Parameters.AddWithValue("@DogumTarihi", DtpDogumTarihi.Value);
                     Cmd.Parameters.AddWithValue("@Cinsiyet", LblKadınErkek.Text);
                     Cmd.Parameters.AddWithValue("@MedeniDurumu", LblBekarEvli.Text);
                     Cmd.Parameters.AddWithValue("@UyruguID", CmbUyruk.SelectedIndex + 1);

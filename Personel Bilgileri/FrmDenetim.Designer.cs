@@ -111,6 +111,8 @@ namespace Personel_Bilgileri
             this.TxtSifre.Size = new System.Drawing.Size(148, 30);
             this.TxtSifre.TabIndex = 27;
             this.TxtSifre.Text = "Şifre";
+            this.TxtSifre.TextChanged += new System.EventHandler(this.TxtSifre_TextChanged);
+            this.TxtSifre.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TxtSifre_MouseDown);
             // 
             // TxtKullanici
             // 
@@ -123,6 +125,8 @@ namespace Personel_Bilgileri
             this.TxtKullanici.Size = new System.Drawing.Size(145, 30);
             this.TxtKullanici.TabIndex = 25;
             this.TxtKullanici.Text = "Kullanıcı Adı";
+            this.TxtKullanici.TextChanged += new System.EventHandler(this.TxtKullanici_TextChanged);
+            this.TxtKullanici.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TxtKullanici_MouseDown);
             // 
             // BtnAdminEkle
             // 
@@ -140,6 +144,7 @@ namespace Personel_Bilgileri
             this.BtnAdminEkle.TabIndex = 24;
             this.BtnAdminEkle.Text = "Uygula";
             this.BtnAdminEkle.UseVisualStyleBackColor = false;
+            this.BtnAdminEkle.Click += new System.EventHandler(this.BtnAdminEkle_Click);
             // 
             // TxtDogumYeri
             // 
@@ -152,6 +157,8 @@ namespace Personel_Bilgileri
             this.TxtDogumYeri.Size = new System.Drawing.Size(148, 30);
             this.TxtDogumYeri.TabIndex = 26;
             this.TxtDogumYeri.Text = "Doğum Yeri";
+            this.TxtDogumYeri.TextChanged += new System.EventHandler(this.TxtDogumYeri_TextChanged);
+            this.TxtDogumYeri.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TxtDogumYeri_MouseDown);
             // 
             // groupBox3
             // 
@@ -198,6 +205,8 @@ namespace Personel_Bilgileri
             this.BtnAdminSil.TabIndex = 24;
             this.BtnAdminSil.Text = "Uygula";
             this.BtnAdminSil.UseVisualStyleBackColor = false;
+            this.BtnAdminSil.TextChanged += new System.EventHandler(this.BtnAdminSil_Click);
+            this.BtnAdminSil.Click += new System.EventHandler(this.BtnAdminSil_Click);
             // 
             // groupBox2
             // 

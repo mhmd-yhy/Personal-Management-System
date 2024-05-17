@@ -48,9 +48,9 @@ namespace Personel_Bilgileri
         {
             TxtSifre.SelectAll();
             TxtSifre.Text = "";
+            TxtSifre.PasswordChar = '*';
             TxtSifre.UseSystemPasswordChar = true;
             CbxSifreGoster.Checked = false;
-            TxtSifre.PasswordChar = '*';
         }
         private void CbxSifreGoster_OnChange(object sender, EventArgs e)
         {
@@ -129,7 +129,5 @@ namespace Personel_Bilgileri
         {
             Application.Exit();
         }
-
-        
     }
 }

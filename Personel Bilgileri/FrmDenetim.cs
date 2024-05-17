@@ -179,6 +179,11 @@ namespace Personel_Bilgileri
             DialogResult dr = FrmMessageBox.Show("Kullanıcı silmek istiyor musunuz?", "Denetim", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dr == DialogResult.Yes)
             {
+                if(CmbAdmin.Text.Trim() == "admin")
+                {
+                    FrmMessageBox.Show("'admin' adi olan kullanici silmek yetkiniz yok.", "Denetim", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
                 string basvur = "Delete From Giris Where KullaniciAdi = '" + CmbAdmin.Text + "'";
                 SqlCommand Cmd = new SqlCommand(basvur, Conn);
                 Conn.Open();
@@ -232,7 +237,7 @@ namespace Personel_Bilgileri
                 FrmMessageBox.Show("Kullanici Eklendi.", "Denetim", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             
-            temizle(groupBox3);
+            temizle(groupBox4);
             Data();
         }
         void temizle(Control control)
